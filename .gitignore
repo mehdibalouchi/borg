@@ -128,3 +128,7 @@ pnpm-lock.yaml
 /apps/cluster/compose/
 /apps/cluster/data/
 /apps/cluster/config/swarm.key
+
+
+#parcel
+*.parcel-cache
