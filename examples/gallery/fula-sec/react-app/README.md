@@ -22,3 +22,18 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+## Deploy
+
+To deploy this application, you need to create a production build first:
+```bash
+npm run build
+```
+
+The above command will create a `build` directory containing everything a web server needs to serve the application. Bring up a `nginx` web server using docker:
+```bash
+docker build -t web-gallery .
+docker run -p 80:80 web-gallery
+```
+
+now open [http://localhost](http://localhost) to use the web gallery production version.
+
